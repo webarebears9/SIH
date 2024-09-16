@@ -1,0 +1,589 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "SUSE", sans-serif;
+}
+html{
+    font-size: 62.5%;
+    /* 1rem=10px */
+}
+::-webkit-scrollbar{
+  width: 1rem;
+}
+::-webkit-scrollbar-track{
+  background-color: #fff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb{
+  background: #088dfa;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: #222d3a;
+}
+/*login page start*/
+.hero-section{
+    /*background-color: rgb(9, 10, 15);*/
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgb(5, 6, 8),rgb(7, 7, 11));
+    background-repeat: no-repeat;
+    background-size:cover;
+    text-align: center;
+}
+p,li,a,label{
+    font-size: 1.8rem;
+    letter-spacing: 0.2rem;
+    text-decoration: none;
+    line-height: 1.5;
+    list-style: none;
+}
+.h1-index{
+    font-size: 15vh;
+    letter-spacing: 0.3rem;
+    color: #ffff;
+    /* filter: drop-shadow(4px 8px 15px #1f90f9); */
+    position: absolute;
+    top:10%;
+    left:30%;
+}
+#h2-home{
+    font-size: 8vh;
+    letter-spacing: 0.2rem;
+    color: #ffff;
+    position: absolute;
+    top:60%;
+    left:40.5%;
+
+}
+.login-icon{
+    position: absolute;
+    top:74%;
+    left:34%;
+    .btn{
+        background-color: transparent;
+        font-size: 2rem;
+        outline: none;
+        border: none;
+        transition: all 0.3s linear;
+    }
+}
+.login{
+    margin: 15px;
+    font-size: 2rem;
+    color:#fff ;
+    border-radius: 20px;
+    padding: 1rem;
+    border: 3px solid#088dfa;
+    transition: all 0.3s linear;
+}
+.login:hover{
+    box-shadow: #088dfa 0px 50px 100px -20px, #088dfa 0px 30px 60px -30px;
+    background-color: rgba(255, 255, 255, 0.171);
+    color:#088dfa ;
+}
+.btn:hover{
+    transform:translateX(-10px) translateY(-10px);
+}
+#logo{
+    position: absolute;
+    top:32%;
+    left:40%;
+    border: 2px solid#088dfa;
+    border-radius: 20px;
+    padding: 3px;
+}
+/*login page end*/
+#login-body {
+    font-family: "SUSE", sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: linear-gradient(rgb(5,6,8),rgb(7,7,11));
+}
+.login-container {
+    /* background-color: white; */
+    background-image: linear-gradient(rgb(5,6,8),rgb(7,7,11));
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    color: #fff;
+}
+.admin-container{
+  margin-top: 10rem;
+}
+#login-h2{
+    font-size: 38px;
+    margin-bottom: 55px;
+    font-weight: 800;
+}
+.input-container {
+    position: relative;
+    margin-bottom: 25px;
+}
+input {
+    width: 100%;
+    padding: 10px 10px 10px 35px;
+    font-size: 24px;
+    border: 2px solid #088dfa ;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+    background-color: transparent;
+    color: #088dfa;
+}
+input:focus{
+    border: 2px solid #fff ;
+}
+.input-container i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #088dfa;
+    font-size: larger;
+}
+#login-btn {
+    font-family: "SUSE", sans-serif;
+    width: 100%;
+    padding: 5px;
+    background-color: transparent;
+    outline: none;
+    color: #088dfa;
+    font-size: 24px;
+    border: 3px solid #088dfa;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#login-btn:hover {
+    background-color: #fff;
+    color: #000;
+    border: transparent;
+}
+.create{
+  margin-top:20vh;
+}
+.h2-create{
+  margin-bottom: 2vh;
+}
+#logo-login{
+    position: absolute;
+    top:5%;
+    left:44.8%;
+    border: 2px solid#088dfa;
+    border-radius: 20px;
+    padding: 3px;
+}
+.create-btn{
+  font-family: "SUSE", sans-serif;
+  width: 50%;
+  padding: 5px;
+  background-color: transparent;
+  outline: none;
+  color: #088dfa;
+  font-size: 24px;
+  cursor: pointer;
+
+}
+.create-btn:hover{
+  background-color: transparent;
+  color: #fff;
+}
+.admin-buttons{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+/*student css**/
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap'); 
+
+  .student-body {
+    display: flex;
+    min-height: 100vh;
+    background-image: linear-gradient(rgb(5, 6, 8),rgb(7, 7, 11));
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+  
+  .container-student {
+    display: flex;
+    width: 100%;
+  }
+  
+  .sidebar {
+    width: 20%;
+    background-color: rgb(20, 20, 20);
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+  }
+  
+  .sidebar .brand {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  form {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px 40px 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .search-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+  }
+  
+  .search-input:focus + .search-icon {
+    color: #088dfa;
+  }
+  .search-input:focus{
+    border: 2px solid #088dfa ;
+  }
+  .sidebar .student-menu {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    color: #fff;
+    font-size: large;
+    font-weight: 700;
+    justify-content: center;
+  }
+  
+  .sidebar .student-menu a {
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    
+  }
+  .sidebar .student-menu a:focus{
+    border-right: 2px solid#088dfa;
+  }
+
+  
+  .sidebar .student-menu a:hover {
+    background-color: #000;
+  }
+  
+  .download-app {
+    text-align: center;
+  }
+  
+  .download-app img {
+    max-width: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .content {
+    width: 56%;
+    padding: 20px;
+  }
+  
+  .header {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .header h2 {
+    font-size: 28px;
+  }
+  
+  .dashboard {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  
+  .time-spending, .homework-progress {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    /* width: 48%; */
+    width: max-content;
+  }
+
+  
+  .time-spending .chart {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .student-a{
+    border-right: 2px solid#088dfa
+  }
+  
+
+  /* Edit Profile */
+  .profile-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .edit-button {
+    /* padding: 10px 20px; */
+    background-color:transparent;
+    border: none;
+    position: absolute;
+    right: 30px;
+    /* color: black; */
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    gap: 5px;
+  }
+
+  /* Edit PRofile ends */
+  
+  .profile-section {
+    width: 20%;
+    padding: 20px;
+    color: #fff;
+    border-left: 4px solid rgb(20, 20, 20);
+  }
+  
+  .profile-card {
+    text-align: center;
+    margin-bottom: 6rem;
+  }
+  
+  .profile-card img {
+    border-radius: 50%;
+    width: 100px;
+    margin-bottom: 6px;
+  }
+  
+  .calendar-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: max-content;
+    text-align: center;
+    color: #000;
+  }
+  
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .current-month {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  td {
+    cursor: pointer;
+  }
+  
+  td:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .current-day {
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+  }
+  .upcoming-classes {
+    margin-top: 20px;
+  }
+  
+  .upcoming-classes .class {
+    margin-bottom: 10px;
+  }
+  /*teacher*/
+  h3{
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .teacher-card {
+    background-color: #0e1217;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    gap: 2vh;
+}
+.teacher-card img{
+  width: 7vw;
+}
+.teacher-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3vw;
+  background-color: transparent;
+  overflow-y:scroll ;
+  max-height: 56.2vh;
+}
+.dashboard-teacher{
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: fit-content;
+  margin-bottom: 0;
+}
+.teacher-sub-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4vh;
+}
+.mb{
+  margin-top:2vh;
+  margin-bottom: 2vh;
+}
+.main-teacher{
+  background-color:transparent;
+  color: #fff;
+  font-family: "SUSE", sans-serif;
+}
+.teacher-header{
+  background-color: transparent;
+  color: #fff;
+}
+.std-buttons{
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.performance-button{
+  font-family: "SUSE", sans-serif;
+  width: fit-content;
+  padding: 10px;
+  background-color: #088dfa;
+  outline: none;
+  color: #fff;
+  font-size: 1.5rem;
+  border-radius: 15px;
+  font-weight: 500;
+  margin: 2px;
+
+}
+.call-button{
+  font-family: "SUSE", sans-serif;
+  width: fit-content;
+  padding: 10px;
+  background-color: #088dfa;
+  outline: none;
+  color: #fff;
+  font-size: 1.5rem;
+  border-radius: 15px;
+  font-weight: 500;
+  margin: 2px;
+  display: flex;
+  align-items: center;
+}
+.addStudent{
+  font-family: "SUSE", sans-serif;
+  width: fit-content;
+  padding: 10px;
+  background-color: #088dfa;
+  outline: none;
+  color: #fff;
+  font-size: 1.7rem;
+  border-radius: 15px;
+  font-weight: 500;
+  margin: 8px;
+
+}
+#login-btn a{
+  font-family: "SUSE", sans-serif;
+    width: 100%;
+    padding: 5px;
+    background-color: transparent;
+    outline: none;
+    color: #088dfa;
+    font-size: 24px;
+    border: 3px solid #088dfa;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.createA{
+  font-size: 2rem;
+}
